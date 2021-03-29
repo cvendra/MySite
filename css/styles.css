@@ -1,0 +1,173 @@
+/*html selector */
+
+body {
+  margin: 0;
+  text-align: center;
+  /*align everything inside body to center */
+  font-family: Merriweather, serif;
+  /*serif is the fallback */
+}
+
+h1 {
+  color: #66BFBF;
+  width: 50%;
+  /*When Block element is used and if width is set then need to use margin as follows for centering */
+  margin: 0 auto 0 auto;
+  /*top 0, right auto, bottom 0, left auto */
+  text-align: center;
+  top: 100px;
+  font-family: Sacramento, serif;
+  font-size: 5.625rem;
+  /*100% = 16px =1rem If we specify this way then the font size will shrink/grow dynamically when the page size is altered by end user*/
+  /*serif is the fallback */
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: Darker-Grotesque, sans-serif;
+  /*sans-serif is the fallback */
+  font-size: 1.875rem;
+  font-weight: lighter;
+  margin: auto 0 auto 0;
+}
+
+h3 {
+  color: #11999E;
+  font-family: Darker-Grotesque, sans-serif;
+  /*sans-serif is the fallback */
+}
+
+hr {
+  border: dotted lightgrey 5px; /*style, size of each dot and color */
+  border-top: 0;
+  /*every Element is represented as box, so if we keep top or bottom as 0 only single line will get displayed */
+  width: 4%;
+  /*Total width of element HR */
+  margin: 100px auto; /*top and bottom margin is 100px, left and right is auto to body */
+}
+
+a{
+  color: #11999E;
+}
+
+p{
+  line-height: 1.5;
+}
+
+/************Class Selector***********/
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.top-h2{
+  font-weight:lighter;
+}
+
+.intro{
+  width: 30%;   /*limit the size of para to 30% */
+  margin: auto;  /*align the para to center, could have used position: relative; left: 200px but alignment will be notaccurate  */
+}
+
+.profile-image {
+  width: 10%;
+}
+
+.computer-image{
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+}
+
+.chilly-image{
+  width: 20%;
+  float: right;
+  margin-right: 10px;
+}
+
+.skill-row{
+  width: 50%;
+  text-align: left;
+  margin: 100px auto 100px auto;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.middle-cloud {
+  position: absolute;
+  left: 300px;
+}
+
+.para-bottom{
+  width: 30%;
+  margin: 20px auto 60px;
+}
+
+.btn {
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   color: #FFFFFF;
+   font-family: Darker-Grotesque,sans-serif;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #337FED 1px;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.bottom-container{
+  margin-top: 50px;
+  background-color: #66BFBF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-link{
+  font-family: darker-Grotesque, sans-serif;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: #30E3CB;
+  font-family: Merriweather, sans-serif;
+}
+
+.footer-para{
+  color: white;
+  font-size: 12px;
+}
